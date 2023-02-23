@@ -25,12 +25,13 @@ main {
   }
   .pokemon__img{
     position: absolute;/*imagem não altera o restante do layout*/
-    bottom: 55%;
-    left: 50%;
+    bottom: 50%;
+    left: 35%;
+    
     /*Usamos % ao invés de PX, pois queremos 55% do tamanho total da div, se colocasse em px,    quando fosse diminuindo a tela, a imagem ficaria bem maior que a div main*/
     transform: translate(-63,20%);
     /*translate(x,y); usamos quando queremos andar com o elemento nos eixos x e y* OBS: esse % é referente ao tamanho da IMAGEM E NÃO DA DIV*/
-    height: 18%;
+    height: 17%;
   }
   .pokemon_data{
     position: absolute;
@@ -57,6 +58,46 @@ main {
   }
   .form{
     position: absolute;
-    background-color: red;
-    
+    /*background-color: red;*/
+    width: 65%;
+    top:65%;
+    left:13.5%;
+  }
+  .input_search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+  }
+  .buttons{
+    position: absolute;
+    bottom: 10%;
+    left:50%;
+    width: 65%;
+    transform: translate(-57%,0);
+    display: flex; /*pra ficar um ao lado do outro;*/
+    gap: 20px; /*gap: pra ficar um pouco separado;*/
+  }
+
+  .button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  }
+
+  .button:hover{
+    background-color: #616060;
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
   }

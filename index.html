@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicons/favicon-16x16.png">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@300;400;700&family=Lobster&family=Oxanium:wght@200;400&display=swap" rel="stylesheet">
+
+    <!--Links-!-->
+    <link rel="icon" href="favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Links-!-->
+    <!--O atributo defer diz ao navegador para executar o script apenas quando a análise do HTML estiver finalizada.-!-->
+    <script defer src="./js/script.js"></script>
 
     <title>Pokédex</title>
 </head>
 <body>
 
 <main>  
-    <img src="https://pokeapi.co/api/v2/pokemon/ditto" alt="pokemon" class="pokemon__img">
+    <img src="teste/6_-_Charizard.gif" alt="pokemon" class="pokemon__img">
 
     <h1 class="pokemon_data">
         <span class="pokemon_number">6</span> -
@@ -30,8 +36,13 @@
          /> 
     </form>
 
-    <img src="img/pokedex.png" alt ="pokedex" class="pokedex">
+    <div class="buttons">
+      <button class="button btn-prev">Prev &lt;</button>
+      <button class="button btn-next">Next &gt;</button>
+    </div>
+    
 
+    <img src="img/pokedex.png" alt ="pokedex" class="pokedex">
 </main>
     
 </body>
