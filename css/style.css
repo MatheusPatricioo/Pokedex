@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
-
 {
     margin: 0;
     padding: 0;
@@ -7,7 +5,58 @@
     font-family: 'Oxanium', cursive;
   }
 
-  main {
+body{
+    text-align: center;
+    background:linear-gradient(to bottom, #6ab7f5, #fff);
+    /*a altura mínima de um elemento*/
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;/*Com isso, os elementos de position absolut, irão respeitar a tag main, as delimitações*/
+  }
+  
+  .pokedex {
+    width: 100%;
+    max-width: 425px;
+  }
+  .pokemon__img{
+    position: absolute;/*imagem não altera o restante do layout*/
+    bottom: 55%;
+    left: 50%;
+    /*Usamos % ao invés de PX, pois queremos 55% do tamanho total da div, se colocasse em px,    quando fosse diminuindo a tela, a imagem ficaria bem maior que a div main*/
+    transform: translate(-63,20%);
+    /*translate(x,y); usamos quando queremos andar com o elemento nos eixos x e y* OBS: esse % é referente ao tamanho da IMAGEM E NÃO DA DIV*/
+    height: 18%;
+  }
+  .pokemon_data{
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top:50.5%;
+    right:27%;
+    font-family: 'Oxanium', cursive;
+    text-transform: capitalize;
+    font-size:clamp(8px,5vw,25px);
+    /*font-size:clamp(min,defalt,max); Serve para ter valores mim, med e max na fonte, pq se colocar com valor fixo de alguns PX, dependendo do tamanho da tela, a fonte vai ficar maior que a div*/
+
+  }
+  .pokemon_number{
+    color: #3a444d;
+    font-family: 'Oxanium', cursive;
+    text-transform: capitalize;
+    
+  }
+  .pokemon_name{
+    color:#3a444d; ;
+    text-transform: capitalize;
+
+  }
+  .form{
+    position: absolute;
     background-color: red;
-    display:inline-block;
+    
   }
