@@ -23,7 +23,7 @@ main {
     width: 100%;
     max-width: 425px;
   }
-  .pokemon__img{
+  .pokemon_image{
     position: absolute;/*imagem não altera o restante do layout*/
     bottom: 50%;
     left: 35%;
@@ -101,3 +101,4 @@ main {
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
   }
+ 
