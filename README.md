@@ -42,7 +42,7 @@ Para mais informações sobre a PokéAPI, visite: [PokéAPI](https://pokeapi.co/
 
 ## Captura de Tela
 
-![Captura de Tela da Pokédex](screenshots/screenshot.png)
+![Captura de Tela da Pokédex](img/pokepoke.png)
 
 ## Contribuições
 
